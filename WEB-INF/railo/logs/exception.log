@@ -1,0 +1,356 @@
+"Severity","ThreadID","Date","Time","Application","Message"
+"ERROR","http-nio-8080-exec-9","03/21/2016","00:48:32","",";stackoverflow.com;stackoverflow.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method):-2
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source):-1
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source):-1
+	at java.net.InetAddress.getAllByName0(Unknown Source):-1
+	at java.net.InetAddress.getAllByName(Unknown Source):-1
+	at java.net.InetAddress.getAllByName(Unknown Source):-1
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45):45
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:278):278
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162):162
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294):294
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:645):645
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:480):480
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906):906
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805):805
+	at railo.commons.net.http.httpclient4.HTTPEngine4Impl._invoke(HTTPEngine4Impl.java:228):228
+	at railo.commons.net.http.httpclient4.HTTPEngine4Impl.get(HTTPEngine4Impl.java:88):88
+	at railo.commons.net.http.HTTPEngine.get(HTTPEngine.java:68):68
+	at railo.commons.io.res.type.http.HTTPResource.getHTTPResponse(HTTPResource.java:48):48
+	at railo.commons.io.res.type.http.HTTPResource.getInputStream(HTTPResource.java:105):105
+	at railo.commons.io.IOUtil.getReader(IOUtil.java:484):484
+	at railo.commons.io.IOUtil.getReader(IOUtil.java:472):472
+	at railo.runtime.tag.Feed.doActionRead(Feed.java:741):741
+	at railo.runtime.tag.Feed.doStartTag(Feed.java:251):251
+	at cfc.getposts_cfc$cf.udfCall(C:\apache\webapps\stackposts\cfc\GetPosts.cfc:4):4
+	at railo.runtime.type.UDFImpl.implementation(UDFImpl.java:93):93
+	at railo.runtime.type.UDFImpl._call(UDFImpl.java:307):307
+	at railo.runtime.type.UDFImpl.callWithNamedValues(UDFImpl.java:195):195
+	at railo.runtime.ComponentImpl._call(ComponentImpl.java:624):624
+	at railo.runtime.ComponentImpl._call(ComponentImpl.java:506):506
+	at railo.runtime.ComponentImpl.callWithNamedValues(ComponentImpl.java:1751):1751
+	at railo.runtime.tag.Invoke.doComponent(Invoke.java:203):203
+	at railo.runtime.tag.Invoke.doEndTag(Invoke.java:176):176
+	at index_cfm$cf.call(C:\apache\webapps\stackposts\index.cfm:2):2
+	at railo.runtime.PageContextImpl.doInclude(PageContextImpl.java:909):909
+	at railo.runtime.PageContextImpl.doInclude(PageContextImpl.java:861):861
+	at railo.runtime.listener.ModernAppListener._onRequest(ModernAppListener.java:206):206
+	at railo.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:18):18
+	at railo.runtime.PageContextImpl.execute(PageContextImpl.java:2212):2212
+	at railo.runtime.PageContextImpl.execute(PageContextImpl.java:2179):2179
+	at railo.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:331):331
+	at railo.loader.servlet.CFMLServlet.service(CFMLServlet.java:29):29
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729):729
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230):230
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165):165
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53):53
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192):192
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165):165
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199):199
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108):108
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522):522
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140):140
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79):79
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620):620
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87):87
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343):343
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1096):1096
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66):66
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:760):760
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1480):1480
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source):-1
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source):-1
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61):61
+	at java.lang.Thread.run(Unknown Source):-1
+"
+"ERROR","http-nio-8080-exec-5","03/21/2016","00:49:15","",";Connect to stackoverflow.com:80 timed out;Connect to stackoverflow.com:80 timed out
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:129):129
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180):180
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294):294
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:645):645
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:480):480
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906):906
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805):805
+	at railo.commons.net.http.httpclient4.HTTPEngine4Impl._invoke(HTTPEngine4Impl.java:228):228
+	at railo.commons.net.http.httpclient4.HTTPEngine4Impl.get(HTTPEngine4Impl.java:88):88
+	at railo.commons.net.http.HTTPEngine.get(HTTPEngine.java:68):68
+	at railo.commons.io.res.type.http.HTTPResource.getHTTPResponse(HTTPResource.java:48):48
+	at railo.commons.io.res.type.http.HTTPResource.getInputStream(HTTPResource.java:105):105
+	at railo.commons.io.IOUtil.getReader(IOUtil.java:484):484
+	at railo.commons.io.IOUtil.getReader(IOUtil.java:472):472
+	at railo.runtime.tag.Feed.doActionRead(Feed.java:741):741
+	at railo.runtime.tag.Feed.doStartTag(Feed.java:251):251
+	at cfc.getposts_cfc$cf.udfCall(C:\apache\webapps\stackposts\cfc\GetPosts.cfc:4):4
+	at railo.runtime.type.UDFImpl.implementation(UDFImpl.java:93):93
+	at railo.runtime.type.UDFImpl._call(UDFImpl.java:307):307
+	at railo.runtime.type.UDFImpl.callWithNamedValues(UDFImpl.java:195):195
+	at railo.runtime.ComponentImpl._call(ComponentImpl.java:624):624
+	at railo.runtime.ComponentImpl._call(ComponentImpl.java:506):506
+	at railo.runtime.ComponentImpl.callWithNamedValues(ComponentImpl.java:1751):1751
+	at railo.runtime.tag.Invoke.doComponent(Invoke.java:203):203
+	at railo.runtime.tag.Invoke.doEndTag(Invoke.java:176):176
+	at index_cfm$cf.call(C:\apache\webapps\stackposts\index.cfm:2):2
+	at railo.runtime.PageContextImpl.doInclude(PageContextImpl.java:909):909
+	at railo.runtime.PageContextImpl.doInclude(PageContextImpl.java:861):861
+	at railo.runtime.listener.ModernAppListener._onRequest(ModernAppListener.java:206):206
+	at railo.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:18):18
+	at railo.runtime.PageContextImpl.execute(PageContextImpl.java:2212):2212
+	at railo.runtime.PageContextImpl.execute(PageContextImpl.java:2179):2179
+	at railo.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:331):331
+	at railo.loader.servlet.CFMLServlet.service(CFMLServlet.java:29):29
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729):729
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230):230
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165):165
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53):53
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192):192
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165):165
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199):199
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108):108
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522):522
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140):140
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79):79
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620):620
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87):87
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343):343
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1096):1096
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66):66
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:760):760
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1480):1480
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source):-1
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source):-1
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61):61
+	at java.lang.Thread.run(Unknown Source):-1
+"
+"ERROR","http-nio-8080-exec-4","03/21/2016","01:04:45","",";Connect to stackoverflow.com:80 timed out;Connect to stackoverflow.com:80 timed out
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:129):129
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180):180
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294):294
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:645):645
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:480):480
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906):906
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805):805
+	at railo.commons.net.http.httpclient4.HTTPEngine4Impl._invoke(HTTPEngine4Impl.java:228):228
+	at railo.commons.net.http.httpclient4.HTTPEngine4Impl.get(HTTPEngine4Impl.java:88):88
+	at railo.commons.net.http.HTTPEngine.get(HTTPEngine.java:68):68
+	at railo.commons.io.res.type.http.HTTPResource.getHTTPResponse(HTTPResource.java:48):48
+	at railo.commons.io.res.type.http.HTTPResource.getInputStream(HTTPResource.java:105):105
+	at railo.commons.io.IOUtil.getReader(IOUtil.java:484):484
+	at railo.commons.io.IOUtil.getReader(IOUtil.java:472):472
+	at railo.runtime.tag.Feed.doActionRead(Feed.java:741):741
+	at railo.runtime.tag.Feed.doStartTag(Feed.java:251):251
+	at cfc.getposts_cfc$cf.udfCall(C:\apache\webapps\stackposts\cfc\GetPosts.cfc:4):4
+	at railo.runtime.type.UDFImpl.implementation(UDFImpl.java:93):93
+	at railo.runtime.type.UDFImpl._call(UDFImpl.java:307):307
+	at railo.runtime.type.UDFImpl.callWithNamedValues(UDFImpl.java:195):195
+	at railo.runtime.ComponentImpl._call(ComponentImpl.java:624):624
+	at railo.runtime.ComponentImpl._call(ComponentImpl.java:506):506
+	at railo.runtime.ComponentImpl.callWithNamedValues(ComponentImpl.java:1751):1751
+	at railo.runtime.tag.Invoke.doComponent(Invoke.java:203):203
+	at railo.runtime.tag.Invoke.doEndTag(Invoke.java:176):176
+	at index_cfm$cf.call(C:\apache\webapps\stackposts\index.cfm:2):2
+	at railo.runtime.PageContextImpl.doInclude(PageContextImpl.java:909):909
+	at railo.runtime.PageContextImpl.doInclude(PageContextImpl.java:861):861
+	at railo.runtime.listener.ModernAppListener._onRequest(ModernAppListener.java:206):206
+	at railo.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:18):18
+	at railo.runtime.PageContextImpl.execute(PageContextImpl.java:2212):2212
+	at railo.runtime.PageContextImpl.execute(PageContextImpl.java:2179):2179
+	at railo.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:331):331
+	at railo.loader.servlet.CFMLServlet.service(CFMLServlet.java:29):29
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729):729
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230):230
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165):165
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53):53
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192):192
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165):165
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199):199
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108):108
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522):522
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140):140
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79):79
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620):620
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87):87
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343):343
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1096):1096
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66):66
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:760):760
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1480):1480
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source):-1
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source):-1
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61):61
+	at java.lang.Thread.run(Unknown Source):-1
+"
+"ERROR","http-nio-8080-exec-10","03/21/2016","01:04:45","",";Connect to stackoverflow.com:80 timed out;Connect to stackoverflow.com:80 timed out
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:129):129
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180):180
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294):294
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:645):645
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:480):480
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906):906
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805):805
+	at railo.commons.net.http.httpclient4.HTTPEngine4Impl._invoke(HTTPEngine4Impl.java:228):228
+	at railo.commons.net.http.httpclient4.HTTPEngine4Impl.get(HTTPEngine4Impl.java:88):88
+	at railo.commons.net.http.HTTPEngine.get(HTTPEngine.java:68):68
+	at railo.commons.io.res.type.http.HTTPResource.getHTTPResponse(HTTPResource.java:48):48
+	at railo.commons.io.res.type.http.HTTPResource.getInputStream(HTTPResource.java:105):105
+	at railo.commons.io.IOUtil.getReader(IOUtil.java:484):484
+	at railo.commons.io.IOUtil.getReader(IOUtil.java:472):472
+	at railo.runtime.tag.Feed.doActionRead(Feed.java:741):741
+	at railo.runtime.tag.Feed.doStartTag(Feed.java:251):251
+	at cfc.getposts_cfc$cf.udfCall(C:\apache\webapps\stackposts\cfc\GetPosts.cfc:4):4
+	at railo.runtime.type.UDFImpl.implementation(UDFImpl.java:93):93
+	at railo.runtime.type.UDFImpl._call(UDFImpl.java:307):307
+	at railo.runtime.type.UDFImpl.callWithNamedValues(UDFImpl.java:195):195
+	at railo.runtime.ComponentImpl._call(ComponentImpl.java:624):624
+	at railo.runtime.ComponentImpl._call(ComponentImpl.java:506):506
+	at railo.runtime.ComponentImpl.callWithNamedValues(ComponentImpl.java:1751):1751
+	at railo.runtime.tag.Invoke.doComponent(Invoke.java:203):203
+	at railo.runtime.tag.Invoke.doEndTag(Invoke.java:176):176
+	at index_cfm$cf.call(C:\apache\webapps\stackposts\index.cfm:2):2
+	at railo.runtime.PageContextImpl.doInclude(PageContextImpl.java:909):909
+	at railo.runtime.PageContextImpl.doInclude(PageContextImpl.java:861):861
+	at railo.runtime.listener.ModernAppListener._onRequest(ModernAppListener.java:206):206
+	at railo.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:18):18
+	at railo.runtime.PageContextImpl.execute(PageContextImpl.java:2212):2212
+	at railo.runtime.PageContextImpl.execute(PageContextImpl.java:2179):2179
+	at railo.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:331):331
+	at railo.loader.servlet.CFMLServlet.service(CFMLServlet.java:29):29
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729):729
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230):230
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165):165
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53):53
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192):192
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165):165
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199):199
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108):108
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522):522
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140):140
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79):79
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620):620
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87):87
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343):343
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1096):1096
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66):66
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:760):760
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1480):1480
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source):-1
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source):-1
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61):61
+	at java.lang.Thread.run(Unknown Source):-1
+"
+"ERROR","http-nio-8080-exec-6","03/21/2016","01:09:11","",";Connect to stackoverflow.com:80 timed out;Connect to stackoverflow.com:80 timed out
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:129):129
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180):180
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294):294
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:645):645
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:480):480
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906):906
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805):805
+	at railo.commons.net.http.httpclient4.HTTPEngine4Impl._invoke(HTTPEngine4Impl.java:228):228
+	at railo.commons.net.http.httpclient4.HTTPEngine4Impl.get(HTTPEngine4Impl.java:88):88
+	at railo.commons.net.http.HTTPEngine.get(HTTPEngine.java:68):68
+	at railo.commons.io.res.type.http.HTTPResource.getHTTPResponse(HTTPResource.java:48):48
+	at railo.commons.io.res.type.http.HTTPResource.getInputStream(HTTPResource.java:105):105
+	at railo.commons.io.IOUtil.getReader(IOUtil.java:484):484
+	at railo.commons.io.IOUtil.getReader(IOUtil.java:472):472
+	at railo.runtime.tag.Feed.doActionRead(Feed.java:741):741
+	at railo.runtime.tag.Feed.doStartTag(Feed.java:251):251
+	at cfc.getposts_cfc$cf.udfCall(C:\apache\webapps\stackposts\cfc\GetPosts.cfc:4):4
+	at railo.runtime.type.UDFImpl.implementation(UDFImpl.java:93):93
+	at railo.runtime.type.UDFImpl._call(UDFImpl.java:307):307
+	at railo.runtime.type.UDFImpl.callWithNamedValues(UDFImpl.java:195):195
+	at railo.runtime.ComponentImpl._call(ComponentImpl.java:624):624
+	at railo.runtime.ComponentImpl._call(ComponentImpl.java:506):506
+	at railo.runtime.ComponentImpl.callWithNamedValues(ComponentImpl.java:1751):1751
+	at railo.runtime.tag.Invoke.doComponent(Invoke.java:203):203
+	at railo.runtime.tag.Invoke.doEndTag(Invoke.java:176):176
+	at index_cfm$cf.call(C:\apache\webapps\stackposts\index.cfm:2):2
+	at railo.runtime.PageContextImpl.doInclude(PageContextImpl.java:909):909
+	at railo.runtime.PageContextImpl.doInclude(PageContextImpl.java:861):861
+	at railo.runtime.listener.ModernAppListener._onRequest(ModernAppListener.java:206):206
+	at railo.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:18):18
+	at railo.runtime.PageContextImpl.execute(PageContextImpl.java:2212):2212
+	at railo.runtime.PageContextImpl.execute(PageContextImpl.java:2179):2179
+	at railo.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:331):331
+	at railo.loader.servlet.CFMLServlet.service(CFMLServlet.java:29):29
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729):729
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230):230
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165):165
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53):53
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192):192
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165):165
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199):199
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108):108
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522):522
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140):140
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79):79
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620):620
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87):87
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343):343
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1096):1096
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66):66
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:760):760
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1480):1480
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source):-1
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source):-1
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61):61
+	at java.lang.Thread.run(Unknown Source):-1
+"
+"ERROR","http-nio-8080-exec-8","03/21/2016","01:10:26","",";Connect to stackoverflow.com:80 timed out;Connect to stackoverflow.com:80 timed out
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:129):129
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180):180
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294):294
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:645):645
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:480):480
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906):906
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805):805
+	at railo.commons.net.http.httpclient4.HTTPEngine4Impl._invoke(HTTPEngine4Impl.java:228):228
+	at railo.commons.net.http.httpclient4.HTTPEngine4Impl.get(HTTPEngine4Impl.java:88):88
+	at railo.commons.net.http.HTTPEngine.get(HTTPEngine.java:68):68
+	at railo.commons.io.res.type.http.HTTPResource.getHTTPResponse(HTTPResource.java:48):48
+	at railo.commons.io.res.type.http.HTTPResource.getInputStream(HTTPResource.java:105):105
+	at railo.commons.io.IOUtil.getReader(IOUtil.java:484):484
+	at railo.commons.io.IOUtil.getReader(IOUtil.java:472):472
+	at railo.runtime.tag.Feed.doActionRead(Feed.java:741):741
+	at railo.runtime.tag.Feed.doStartTag(Feed.java:251):251
+	at cfc.getposts_cfc$cf.udfCall(C:\apache\webapps\stackposts\cfc\GetPosts.cfc:4):4
+	at railo.runtime.type.UDFImpl.implementation(UDFImpl.java:93):93
+	at railo.runtime.type.UDFImpl._call(UDFImpl.java:307):307
+	at railo.runtime.type.UDFImpl.callWithNamedValues(UDFImpl.java:195):195
+	at railo.runtime.ComponentImpl._call(ComponentImpl.java:624):624
+	at railo.runtime.ComponentImpl._call(ComponentImpl.java:506):506
+	at railo.runtime.ComponentImpl.callWithNamedValues(ComponentImpl.java:1751):1751
+	at railo.runtime.tag.Invoke.doComponent(Invoke.java:203):203
+	at railo.runtime.tag.Invoke.doEndTag(Invoke.java:176):176
+	at index_cfm$cf.call(C:\apache\webapps\stackposts\index.cfm:2):2
+	at railo.runtime.PageContextImpl.doInclude(PageContextImpl.java:909):909
+	at railo.runtime.PageContextImpl.doInclude(PageContextImpl.java:861):861
+	at railo.runtime.listener.ModernAppListener._onRequest(ModernAppListener.java:206):206
+	at railo.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:18):18
+	at railo.runtime.PageContextImpl.execute(PageContextImpl.java:2212):2212
+	at railo.runtime.PageContextImpl.execute(PageContextImpl.java:2179):2179
+	at railo.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:331):331
+	at railo.loader.servlet.CFMLServlet.service(CFMLServlet.java:29):29
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729):729
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230):230
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165):165
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53):53
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192):192
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165):165
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199):199
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108):108
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522):522
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140):140
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79):79
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620):620
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87):87
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343):343
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1096):1096
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66):66
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:760):760
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1480):1480
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source):-1
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source):-1
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61):61
+	at java.lang.Thread.run(Unknown Source):-1
+"
